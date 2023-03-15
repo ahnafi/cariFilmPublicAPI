@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>cari film di sini</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark navbar fixed-top mb-5"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">SA Movie</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"
+              >cari film</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="text-center">cari film kamu di sini</h1>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="judul film ...."
+              id="cariInput"
+            />
+            <button class="btn btn-dark" type="button" id="cariBtn">🔎</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row mb-5 ms-2" id="daftarFilm"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Info Film</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="js/jquery.min.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="js/bootstrap.min.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="js/script.js"
+    ></script>
+  </body>
+</html>
