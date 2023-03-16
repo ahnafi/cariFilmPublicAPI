@@ -1,7 +1,7 @@
 function cariFilm(){
     $("#daftarFilm").html('');
     $.ajax({
-        url : "http://www.omdbapi.com",
+        url : "https://www.omdbapi.com",
         type : "GET",
         dataType : "json",
         data :{
@@ -51,7 +51,7 @@ $('#daftarFilm').on('click','.see-detail',function(){
     //kenapa see detailnya di dalam karena adanya dom bubling
     console.log($(this).data('id'))
     $.ajax({
-        url : "http://www.omdbapi.com",
+        url : "https://www.omdbapi.com",
         type : "GET",
         dataType : "json",
         data :{
