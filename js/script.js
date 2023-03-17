@@ -49,7 +49,7 @@ $('#cariInput').on('keyup',function(e){
 })
 $('#daftarFilm').on('click','.see-detail',function(){ 
     //kenapa see detailnya di dalam karena adanya dom bubling
-    console.log($(this).data('id'))
+   
     $.ajax({
         url : "https://www.omdbapi.com",
         type : "GET",
